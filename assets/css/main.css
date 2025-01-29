@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+  
 
 ol, ul {
 	list-style: none;
@@ -3091,10 +3092,22 @@ input, select, textarea {
 
 /* Footer */
 
+	.contactForm {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 80vw;
+	}
+
+	.footer-container {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
 	#footer {
 		padding: 6em 0 4em 0 ;
 		background: #3d424f;
-		color: #cfd0d3;
+		color: #cfd0d3; 
 	}
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {

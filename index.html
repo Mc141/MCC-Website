@@ -1,275 +1,336 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Cogent by Pixelarity
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 -->
 <html>
-	<head>
-		<title>Untitled</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="landing is-preload">
+  <head>
+    <title>Untitled</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+	
+    <link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/contact.css">
+    <script defer src="assets/js/contact.js"></script>
+  </head>
+  <body class="landing is-preload">
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1><a id="logo" href="index.html">MCC Limpopo</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="manuals.html">Product Manual</a>
+          </li>
+          <li><button onclick="scrollToBottom()">Contact</button></li>
+        </ul>
+      </nav>
+    </header>
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<h1><a id="logo" href="index.html">Cogent <span>by Pixelarity</span></a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li>
-							<a href="#">Layouts</a>
-							<ul>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
-								<li>
-									<a href="#">Submenu</a>
-									<ul>
-										<li><a href="#">Option 1</a></li>
-										<li><a href="#">Option 2</a></li>
-										<li><a href="#">Option 3</a></li>
-										<li><a href="#">Option 4</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><a href="elements.html">Elements</a></li>
-						<li><a href="#" class="button">Sign Up</a></li>
-					</ul>
-				</nav>
-			</header>
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <h2>Arcu mus velit nunc accumsan.</h2>
+        <p>
+          Eget ata curae nisl cep, dui amet ac leo non ante nullam turpis. Dis
+          eu dolor.
+        </p>
+        <ul class="actions special">
+          <li><a href="#" class="button primary large">Sign Up</a></li>
+          <li><a href="#" class="button large">Learn More</a></li>
+        </ul>
+      </div>
+      <div class="browser-mockup">
+        <div class="chrome">
+          <span class="url">http://untitledapp.tld</span>
+        </div>
+        <img src="images/banner.jpg" alt="" />
+      </div>
+    </section>
 
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<h2>Arcu mus velit nunc accumsan.</h2>
-					<p>Eget ata curae nisl cep, dui amet ac leo non ante nullam turpis. Dis eu dolor.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button primary large">Sign Up</a></li>
-						<li><a href="#" class="button large">Learn More</a></li>
-					</ul>
-				</div>
-				<div class="browser-mockup">
-					<div class="chrome">
-						<span class="url">http://untitledapp.tld</span>
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-12-medium">
+            <h3 class="icon solid fa-code">Magna feugiat ipsum</h3>
+            <p>
+              Vivamus nec odio tempor etiam aliquam tincidunt. Aliquam lorem et
+              cursus dolore consequat et feugiat nulla tempus.
+            </p>
+          </div>
+          <div class="col-4 col-12-medium">
+            <h3 class="icon solid fa-gem">Lorem porta tempus</h3>
+            <p>
+              Vivamus nec odio tempor etiam aliquam tincidunt. Aliquam lorem et
+              cursus dolore consequat et feugiat nulla tempus.
+            </p>
+          </div>
+          <div class="col-4 col-12-medium">
+            <h3 class="icon solid fa-mobile-alt">Lacinia amet rhoncus</h3>
+            <p>
+              Vivamus nec odio tempor etiam aliquam tincidunt. Aliquam lorem et
+              cursus dolore consequat et feugiat nulla tempus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper style2">
+      <div class="container">
+        <section class="spotlight left">
+          <div class="row gtr-200 aln-middle">
+            <div class="col-4 col-12-medium">
+              <span class="image fit"
+                ><img src="images/pic01.jpg" alt=""
+              /></span>
+            </div>
+            <div class="col-8 col-12-medium">
+              <h2>Etiam lorem sed tempus magna adipiscing</h2>
+              <p>
+                Phasellus tortor magna, convallis sed felis ut, tempor volutpat
+                lorem ipsum quam. Phasellus porta lacinia commodo. Vestibulum
+                enim nibh adipiscing rhoncus at tincidunt ac, feugiat ac dolor.
+                Sed nec odio porta magna feugiat quam posuere feugiat. Nullam
+                porttitor sodales. Tempor volutpat lorem ipsum quam. Phasellus
+                porta lacinia commodo. Vestibulum enim nibh adipiscing rhoncus
+                at tincidunt.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="spotlight right">
+          <div class="row gtr-200 aln-middle">
+            <div class="col-8 col-12-medium">
+              <h2>Etiam lorem sed tempus magna adipiscing</h2>
+              <p>
+                Phasellus tortor magna, convallis sed felis ut, tempor volutpat
+                lorem ipsum quam. Phasellus porta lacinia commodo. Vestibulum
+                enim nibh adipiscing rhoncus at tincidunt ac, feugiat ac dolor.
+                Sed nec odio porta magna feugiat quam posuere feugiat. Nullam
+                porttitor sodales. Tempor volutpat lorem ipsum quam. Phasellus
+                porta lacinia commodo. Vestibulum enim nibh adipiscing rhoncus
+                at tincidunt.
+              </p>
+            </div>
+            <div class="col-4 col-12-medium imp-medium">
+              <span class="image fit"
+                ><img src="images/pic02.jpg" alt=""
+              /></span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper style3">
+      <div class="container">
+        <div class="row gtr-200">
+          <div class="col-5 col-12-medium">
+            <h2>
+              Augue velit lorem pellentesque <br />
+              tempus aliquet adipiscing
+            </h2>
+            <p>
+              Vivamus nec odio tempor et aliquam tincidunt. Aliquam lorem cursus
+              dolore consequat feugiat nulla tempus feugiat et lorem tempus
+              lorem ipsum dolor sit amet feugiat tempus.
+            </p>
+          </div>
+          <div class="col-7 col-12-medium">
+            <div class="row gtr-200">
+              <div class="col-6 col-12-xsmall">
+                <ul class="check">
+                  <li>Quisque nec enim</li>
+                  <li>Maecenas nec convallis risus</li>
+                  <li>Scelerisque vulputate leo</li>
+                  <li>Nec blandit sed ligula</li>
+                  <li>Aliquam nisl nulla</li>
+                </ul>
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <ul class="check">
+                  <li>Aliquam nisl nulla</li>
+                  <li>Feugiat at malesuada iaculis</li>
+                  <li>Sed vulputate magna</li>
+                  <li>Tincidunt elit sed rhoncus</li>
+                  <li>Quisque nec enim</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Four -->
+    <section id="four" class="wrapper style4 special">
+      <div class="container">
+        <header class="major">
+          <h2>Magna feugiat sed consequat</h2>
+          <p>
+            Vivamus nec odio tempor et aliquam tincidunt aliquam lorem dolore
+            consequat feugiat.
+          </p>
+        </header>
+        <div class="plans">
+          <div class="row gtr-200 gtr-uniform">
+            <div class="col-4 col-12-medium">
+              <div class="plan">
+                <h3>Basic</h3>
+                <ul>
+                  <li><strong>Quisque nec enim</strong></li>
+                  <li><strong>Maecenas convallis risus</strong></li>
+                  <li>Scelerisque vulputate</li>
+                  <li>Nec blandit magna</li>
+                  <li>Feugiat malesuada</li>
+                </ul>
+                <span class="price"><strong>$4</strong> / mo</span>
+                <a href="#" class="button primary large fit">Sign Up</a>
+              </div>
+            </div>
+            <div class="col-4 col-12-medium">
+              <div class="plan">
+                <h3>Pro</h3>
+                <ul>
+                  <li><strong>Quisque nec enim</strong></li>
+                  <li><strong>Maecenas convallis risus</strong></li>
+                  <li><strong>Scelerisque vulputate</strong></li>
+                  <li><strong>Nec blandit magna</strong></li>
+                  <li>Feugiat malesuada</li>
+                </ul>
+                <span class="price"><strong>$9</strong> / mo</span>
+                <a href="#" class="button primary large fit">Sign Up</a>
+              </div>
+            </div>
+            <div class="col-4 col-12-medium">
+              <div class="plan">
+                <h3>Max</h3>
+                <ul>
+                  <li><strong>Quisque nec enim</strong></li>
+                  <li><strong>Maecenas convallis risus</strong></li>
+                  <li><strong>Scelerisque vulputate</strong></li>
+                  <li><strong>Nec blandit magna</strong></li>
+                  <li><strong>Feugiat malesuada</strong></li>
+                </ul>
+                <span class="price"><strong>$14</strong> / mo</span>
+                <a href="#" class="button primary large fit">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          Tempor et aliquam tincidunt aliquam lorem dolore?
+          <a href="#" class="button inline">Learn More</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="footer-container">
+
+		
+        <!-- <div>
+			<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+
+				<h3>Write us</h3>
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+						</div>
 					</div>
-					<img src="images/banner.jpg" alt="" />
-				</div>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-12-medium">
-							<h3 class="icon solid fa-code">Magna feugiat ipsum</h3>
-							<p>Vivamus nec odio tempor etiam aliquam tincidunt. Aliquam lorem et cursus dolore consequat et feugiat nulla tempus.</p>
-						</div>
-						<div class="col-4 col-12-medium">
-							<h3 class="icon solid fa-gem">Lorem porta tempus</h3>
-							<p>Vivamus nec odio tempor etiam aliquam tincidunt. Aliquam lorem et cursus dolore consequat et feugiat nulla tempus.</p>
-						</div>
-						<div class="col-4 col-12-medium">
-							<h3 class="icon solid fa-mobile-alt">Lacinia amet rhoncus</h3>
-							<p>Vivamus nec odio tempor etiam aliquam tincidunt. Aliquam lorem et cursus dolore consequat et feugiat nulla tempus.</p>
+					<div class="col-md-12"> 
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" id="email" placeholder="Email">
 						</div>
 					</div>
-				</div>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<div class="container">
-					<section class="spotlight left">
-						<div class="row gtr-200 aln-middle">
-							<div class="col-4 col-12-medium">
-								<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
-							</div>
-							<div class="col-8 col-12-medium">
-								<h2>Etiam lorem sed tempus magna adipiscing</h2>
-								<p>Phasellus tortor magna, convallis sed felis ut, tempor volutpat lorem ipsum quam. Phasellus porta lacinia commodo. Vestibulum enim nibh adipiscing rhoncus at tincidunt ac, feugiat ac dolor. Sed nec odio porta magna feugiat quam posuere feugiat. Nullam porttitor sodales. Tempor volutpat lorem ipsum quam. Phasellus porta lacinia commodo. Vestibulum enim nibh adipiscing rhoncus at tincidunt.</p>
-							</div>
-						</div>
-					</section>
-					<section class="spotlight right">
-						<div class="row gtr-200 aln-middle">
-							<div class="col-8 col-12-medium">
-								<h2>Etiam lorem sed tempus magna adipiscing</h2>
-								<p>Phasellus tortor magna, convallis sed felis ut, tempor volutpat lorem ipsum quam. Phasellus porta lacinia commodo. Vestibulum enim nibh adipiscing rhoncus at tincidunt ac, feugiat ac dolor. Sed nec odio porta magna feugiat quam posuere feugiat. Nullam porttitor sodales. Tempor volutpat lorem ipsum quam. Phasellus porta lacinia commodo. Vestibulum enim nibh adipiscing rhoncus at tincidunt.</p>
-							</div>
-							<div class="col-4 col-12-medium imp-medium">
-								<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
-							</div>
-						</div>
-					</section>
-				</div>
-			</section>
-
-		<!-- Three -->
-			<section id="three" class="wrapper style3">
-				<div class="container">
-					<div class="row gtr-200">
-						<div class="col-5 col-12-medium">
-							<h2>Augue velit lorem pellentesque <br /> tempus aliquet adipiscing</h2>
-							<p>Vivamus nec odio tempor et aliquam tincidunt. Aliquam lorem cursus dolore consequat feugiat nulla tempus feugiat et lorem tempus lorem ipsum dolor sit amet feugiat tempus.</p>
-						</div>
-						<div class="col-7 col-12-medium">
-							<div class="row gtr-200">
-								<div class="col-6 col-12-xsmall">
-									<ul class="check">
-										<li>Quisque nec enim</li>
-										<li>Maecenas nec convallis risus</li>
-										<li>Scelerisque vulputate leo</li>
-										<li>Nec blandit sed ligula</li>
-										<li>Aliquam nisl nulla</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<ul class="check">
-										<li>Aliquam nisl nulla</li>
-										<li>Feugiat at malesuada iaculis</li>
-										<li>Sed vulputate magna</li>
-										<li>Tincidunt elit sed rhoncus</li>
-										<li>Quisque nec enim</li>
-									</ul>
-								</div>
-							</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
 						</div>
 					</div>
-				</div>
-			</section>
-
-		<!-- Four -->
-			<section id="four" class="wrapper style4 special">
-				<div class="container">
-					<header class="major">
-						<h2>Magna feugiat sed consequat</h2>
-						<p>Vivamus nec odio tempor et aliquam tincidunt aliquam lorem dolore consequat feugiat.</p>
-					</header>
-					<div class="plans">
-						<div class="row gtr-200 gtr-uniform">
-							<div class="col-4 col-12-medium">
-								<div class="plan">
-									<h3>Basic</h3>
-									<ul>
-										<li><strong>Quisque nec enim</strong></li>
-										<li><strong>Maecenas convallis risus</strong></li>
-										<li>Scelerisque vulputate</li>
-										<li>Nec blandit magna</li>
-										<li>Feugiat malesuada</li>
-									</ul>
-									<span class="price"><strong>$4</strong> / mo</span>
-									<a href="#" class="button primary large fit">Sign Up</a>
-								</div>
-							</div>
-							<div class="col-4 col-12-medium">
-								<div class="plan">
-									<h3>Pro</h3>
-									<ul>
-										<li><strong>Quisque nec enim</strong></li>
-										<li><strong>Maecenas convallis risus</strong></li>
-										<li><strong>Scelerisque vulputate</strong></li>
-										<li><strong>Nec blandit magna</strong></li>
-										<li>Feugiat malesuada</li>
-									</ul>
-									<span class="price"><strong>$9</strong> / mo</span>
-									<a href="#" class="button primary large fit">Sign Up</a>
-								</div>
-							</div>
-							<div class="col-4 col-12-medium">
-								<div class="plan">
-									<h3>Max</h3>
-									<ul>
-										<li><strong>Quisque nec enim</strong></li>
-										<li><strong>Maecenas convallis risus</strong></li>
-										<li><strong>Scelerisque vulputate</strong></li>
-										<li><strong>Nec blandit magna</strong></li>
-										<li><strong>Feugiat malesuada</strong></li>
-									</ul>
-									<span class="price"><strong>$14</strong> / mo</span>
-									<a href="#" class="button primary large fit">Sign Up</a>
-								</div>
-							</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
 						</div>
 					</div>
-					<p>Tempor et aliquam tincidunt aliquam lorem dolore? <a href="#" class="button inline">Learn More</a></p>
-				</div>
-			</section>
-
-		<!-- Footer -->
-			<div id="footer">
-				<div class="container">
-					<div class="row gtr-200">
-						<section class="col-4 col-12-medium about">
-							<h3>Commodo sed amet lipsum <br /> feugiat et consequat</h3>
-							<p>Phasellus tortor magna, convallis sed felis tempor volutpat lorem quam. Phasellus lacinia commodo. Vestibulum enim nibh adipiscing rhoncus at tincidunt ac, feugiat ac dolor. Sed nec odio porta magna feugiat quam posuere feugiat. Nullam porttitor sodales lorem ipsum dolor sit amet et lorem ipsum dolor sit amet consequat feugiat lorem ipsum dolor amet feugiat adipiscing sed phasellus aliquam.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section class="col-4 col-6-medium col-12-xsmall">
-							<h3>News</h3>
-							<ul class="updates">
-								<li>
-									<p><a href="#">Phasellus tortor magna, convallis sed felis tempor volutpat lorem quam. Phasellus lacinia.</a></p>
-									<span class="timestamp">March 29, 2015</span>
-								</li>
-								<li>
-									<p><a href="#">Feugiat quam posuere feugiat. Nullam porttitor sodales lorem ipsum dolor sit amet.</a></p>
-									<span class="timestamp">March 24, 2015</span>
-								</li>
-								<li>
-									<p><a href="#">Rhoncus at tincidunt ac, feugiat ac dolor. Sed nec odio porta magna feugiat quam posuere.</a></p>
-									<span class="timestamp">March 15, 2015</span>
-								</li>
-							</ul>
-						</section>
-						<section class="col-4 col-6-medium col-12-xsmall">
-							<h3>Contact</h3>
-							<ul class="labeled-icons">
-								<li>
-									<h4 class="icon solid fa-home"><span class="label">Address</span></h4>
-									1234 Fictional Road Suite #5428<br />Nashville, TN 00000
-								</li>
-								<li>
-									<h4 class="icon solid fa-phone"><span class="label">Phone</span></h4>
-									(800) 000-0000
-								</li>
-								<li>
-									<h4 class="icon solid fa-envelope"><span class="label">Email</span></h4>
-									<a href="#">information@untitled.tld</a>
-								</li>
-								<li>
-									<h4 class="icon brands fa-facebook-f"><span class="label">Facebook</span></h4>
-									<a href="#">facebook.com/untitled-tld</a>
-								</li>
-								<li>
-									<h4 class="icon brands fa-twitter"><span class="label">Twitter</span></h4>
-									<a href="#">twitter.com/untitled-tld</a>
-								</li>
-							</ul>
-						</section>
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="submit" value="Send Message" style="background-color: #00b47b;" class="btn fit">
+							<div class="submitting"></div>
+						</div>
 					</div>
-				</div>
-				<ul class="copyright">
-					<li>&copy; Untitled Corp. All rights reserved.</li>
-					<li><a href="#">Terms of Use</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
-			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			</form>
+		</div> -->
 
-	</body>
+
+
+		<div style="width: 40vw;">
+			<h3>About us</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus consequatur ab. Unde esse assumenda veritatis facilis eveniet aliquam et, nam tempora non laboriosam laborum molestias totam asperiores ea, at, ullam quidem eaque nesciunt optio culpa quo animi reprehenderit dignissimos? Optio quaerat quia magnam eius tempora velit iste hic nulla sed. Ea, laudantium aperiam odit recusandae, sint et labore facere iste, rerum earum dolorum eaque? Porro a iure quibusdam harum, explicabo nesciunt commodi aperiam ipsum culpa temporibus hic eaque animi?</p>
+			<p>
+				 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum amet velit inventore ut fugit alias aliquid, numquam optio exercitationem necessitatibus quae deserunt voluptates, totam facilis iure ipsum nisi commodi non! Cumque hic autem beatae temporibus iure earum, doloribus eaque veritatis in sunt molestias accusamus unde fugit aliquid omnis exercitationem laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda repellat facilis, dicta fugit corrupti ullam sapiente beatae asperiores voluptatum ratione earum magni iure accusamus nesciunt voluptates nulla doloremque unde?</p>
+		</div>
+
+
+        <div>
+          <h3>Contact</h3>
+          <ul class="labeled-icons">
+            <li>
+              <h4 class="icon solid fa-home">
+                <span class="label">Address</span>
+              </h4>
+              1234 Fictional Road Suite #5428<br />Nashville, TN 00000
+            </li>
+            <li>
+              <h4 class="icon solid fa-phone">
+                <span class="label">Phone</span>
+              </h4>
+              (800) 000-0000
+            </li>
+            <li>
+              <h4 class="icon solid fa-envelope">
+                <span class="label">Email</span>
+              </h4>
+              <a href="#">information@untitled.tld</a>
+            </li>
+            <li>
+              <h4 class="icon brands fa-facebook-f">
+                <span class="label">Facebook</span>
+              </h4>
+              <a href="#">facebook.com/untitled-tld</a>
+            </li>
+            <li>
+              <h4 class="icon brands fa-twitter">
+                <span class="label">Twitter</span>
+              </h4>
+              <a href="#">twitter.com/untitled-tld</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="copyright">
+        <li>&copy; MCC Limpopo</li>
+      </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

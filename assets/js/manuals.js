@@ -1,50 +1,42 @@
-async function fetchJSONData() {
-    try {
-        const response = await fetch("/data/manuals.json");
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return await response.json(); // Resolve the JSON
-    } catch (error) {
-        console.error("Unable to fetch data:", error);
-        throw error; // Rethrow if needed
-    }
+const jsonFilePath = './data/manuals.json';
+
+let data = {};
+
+// Ensure the container exists
+let dropdownContainer = document.querySelector(".dropdown-container");
+
+if (!dropdownContainer) {
+    console.error("Error: dropdownContainer element not found!");
 }
 
-
-
-
-
-
-
-(async () => {
-    try {
-        const dropdownContainer = document.querySelector(".dropdown-container");
-        const manualData = await fetchJSONData(); // Fetch and wait for the data
-
-        // Loop through categories using Object.keys
-        for (const category of Object.keys(manualData)) {
-            console.log(category); // Log each category
-
-            let dropdown = document.createElement("div");
-            dropdown.classList.add("dropdown");
-
-            let p = document.createElement("p");
-            p.textContent = category;
-
-            dropdown.appendChild(p);
-
-
-            dropdownContainer.appendChild(dropdown);
-
-
-
-
-            dropdown.addEventListener("click", e => {
-                
-            });
-        }
-    } catch (error) {
-        console.error("Error processing manual data:", error);
+// Fetch JSON data and initialize
+fetch(jsonFilePath)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
     }
-})();
+    return response.json();
+  })
+  .then(fetchedData => {
+    data = fetchedData; // Assign fetched data to global variable
+
+    // Loop through categories using Object.keys
+    for (const category of Object.keys(data)) {
+        console.log(category); // Log each category
+
+        let dropdown = document.createElement("div");
+        dropdown.classList.add("dropdown");
+
+        let p = document.createElement("p");
+        p.textContent = category;
+
+        dropdown.appendChild(p);
+        dropdownContainer.appendChild(dropdown);
+
+        // Add event listener to toggle active class
+        dropdown.addEventListener("click", e => {
+            dropdown.classList.toggle("active");
+        });
+    }
+  })
+  .catch(error => console.error("Error fetching JSON:", error));

@@ -17,6 +17,7 @@ body {
     align-items: center;
     width: 100%;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -29,12 +30,32 @@ p {
 }
 
 .dropdown {
+    margin-top: 20px;
+    padding: 10px 10px 10px 20px;
+    width: 70%;
+    background-color: grey;
+}
+
+
+.dropdown-header {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    padding: 10px 10px 10px 40px;
-    width: 70%;
-    background-color: black;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.active-header {
+    margin-bottom: 20px;
+}
+
+
+table, tr {
+    border: 2px solid black;
+}
+
+a {
+    color: black;
 }
 
 

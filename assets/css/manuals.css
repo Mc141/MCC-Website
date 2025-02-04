@@ -23,7 +23,11 @@ body {
 }
 
 #main-header {
-    margin-top: 180px !important;
+    margin-top: 120px !important;
+    background-color: #4b505c;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
 }
 
 h2 {
@@ -38,7 +42,8 @@ p {
     margin-top: 20px;
     padding: 10px 10px 10px 20px;
     width: 70%;
-    background-color: #515663;
+    background-color: #3d4049;
+    border-radius: 10px;
 }
 
 

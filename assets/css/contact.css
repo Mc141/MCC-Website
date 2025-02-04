@@ -135,3 +135,6 @@
     font-size: 16px;
     font-weight: 500; }
   
+ h3 {
+  margin: 0 !important;
+ }

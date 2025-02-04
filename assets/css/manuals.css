@@ -6,9 +6,11 @@
 }
 
 
+
 body {
-    background-color: #3d424f;
+    background-color: #4fcd8e;
     color: white;
+    padding-bottom: 0 !important;
 }
 
 
@@ -20,8 +22,11 @@ body {
     margin-bottom: 40px;
 }
 
-h3 {
-    margin-top: 150px;
+#main-header {
+    margin-top: 180px !important;
+}
+
+h2 {
     color: white;
 }
 
@@ -33,7 +38,7 @@ p {
     margin-top: 20px;
     padding: 10px 10px 10px 20px;
     width: 70%;
-    background-color: grey;
+    background-color: #515663;
 }
 
 
@@ -51,11 +56,11 @@ p {
 
 
 table, tr {
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 a {
-    color: black;
+    color: white;
 }
 
 
@@ -64,4 +69,9 @@ a {
     .dropdown {
         width: 90%;
     }
+}
+
+.footer-container {
+    padding-top: 120px;
+    background-color: #3d424f;
 }

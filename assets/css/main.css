@@ -3097,16 +3097,18 @@ input, select, textarea {
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
-		width: 80vw;
+		width: 30vw;
+
 	}
 
 	.footer-container {
 		display: flex;
+
 		justify-content: space-evenly;
 	}
 
 	#footer {
-		padding: 6em 0 4em 0 ;
+
 		background: #3d424f;
 		color: #cfd0d3; 
 	}

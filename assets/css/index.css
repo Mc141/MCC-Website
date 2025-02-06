@@ -48,12 +48,19 @@ input, textarea {
 
 .footer-container {
     padding-top: 120px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
 }
 
 
+
+
+
+
 .copyright {
-    padding-bottom: 40px !important;
-    margin-bottom: 0 !important;
+
+    padding: 20px 0 !important;
+    margin: 0 !important;
+    color: white !important;
 }
 
 .collage-section {
@@ -92,16 +99,26 @@ input, textarea {
 .products-title {
     margin-top: 0;
     margin-bottom: 30px;
-    background-color: #4b505c;
-    padding: 25px 0 !important;
-    color: white;
+
 }
 
 .products-section {
-    background-color: #4fcd8e;
-    padding-bottom: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+
+body > section.products-section > ul {
+    margin-top: 30px;
+}
+
+
+
+.products-list {
+    padding: 0 50px;
+}
 
 
 
@@ -115,4 +132,54 @@ input, textarea {
 .products-image {
     width: 30vw;
     
+}
+
+.category {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+.products-list-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+
+
+
+.category {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.about-title, .section-title, .products-title {
+    color: white;
+    background-color: #4fcd8e;
+    padding: 25px 0 !important;
+    margin-bottom: 30px;
+}
+
+
+
+.about-section {
+    background-color: white;
+    color: #4b505c;
+}
+
+
+
+.about-container {
+    padding: 20px 200px;
 }

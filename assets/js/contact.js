@@ -11,6 +11,10 @@ function scrollToBottom() {
 
 
 
+
+
+
+
 function scrollToPosition(targetY) {
     const scrollDuration = 1000; // Duration in milliseconds
     const startY = window.scrollY; // Starting position

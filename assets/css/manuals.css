@@ -7,13 +7,76 @@
 
 
 
-body {
-    background-color: #4fcd8e;
-    color: white;
-    padding-bottom: 0 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-container {
+    padding-top: 120px;
+    background-color: linear-gradient(135deg, #2c3e50, #34495e);
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: white;
+    color: white;
+    padding-bottom: 0 !important;
+    line-height: 1.6;
+}
+
+/* Header */
+#main-header {
+
+    margin-top: 120px !important;
+    background: #4fcd8e;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 4px solid rgb(24, 26, 27);
+}
+
+/* Dropdown Container */
 .dropdown-container {
     display: flex;
     align-items: center;
@@ -22,61 +85,95 @@ body {
     margin-bottom: 40px;
 }
 
-#main-header {
-    margin-top: 120px !important;
-    background-color: #4b505c;
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-}
-
 h2 {
-    color: white;
+    color: #1abc9c;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 p {
     margin: 0;
+    font-size: 16px;
 }
 
+/* Dropdown Styling */
 .dropdown {
     margin-top: 20px;
-    padding: 10px 10px 10px 20px;
+    padding: 15px;
     width: 70%;
     background-color: #3d4049;
-    border-radius: 10px;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.dropdown:hover {
+    background-color: #50545f;
+}
 
 .dropdown-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
-
 
 .active-header {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-table, tr {
+table, tr, td, th {
     border: 2px solid white;
+    padding: 10px;
+    text-align: left;
 }
 
+th {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+}
+
+/* Links */
 a {
     color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #16a085;
+    text-decoration: underline;
 }
 
 
 
-@media only screen and (max-width: 500px) {
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
     .dropdown {
         width: 90%;
     }
-}
 
-.footer-container {
-    padding-top: 120px;
-    background-color: #3d424f;
+    #main-header {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
 }

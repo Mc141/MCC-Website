@@ -2161,7 +2161,7 @@ input, select, textarea {
 
 			ul.labeled-icons li {
 				margin-bottom: 3em;
-				padding-left: 3em;
+
 				position: relative;
 			}
 
@@ -3102,14 +3102,24 @@ input, select, textarea {
 	}
 
 	.footer-container {
+
 		display: flex;
+
 
 		justify-content: space-evenly;
 	}
 
+
+
+
+
+
+
+
+
 	#footer {
 
-		background: #3d424f;
+		background-color: #3d424f !important;
 		color: #cfd0d3; 
 	}
 

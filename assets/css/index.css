@@ -162,8 +162,6 @@ body > section.products-section > ul {
 
 
 
-
-
 .about-title, .section-title, .products-title {
     color: white;
     background-color: #4fcd8e;
@@ -183,3 +181,23 @@ body > section.products-section > ul {
 .about-container {
     padding: 20px 200px;
 }
+
+
+i {
+    display: flex;
+    align-content: center;
+}
+
+.logo-li {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+

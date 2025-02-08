@@ -1,19 +1,7 @@
-
-
-
 function scrollToBottom() {
     console.log("Hello World");
-
-
     scrollToPosition(document.documentElement.scrollHeight);
-      
 }
-
-
-
-
-
-
 
 function scrollToPosition(targetY) {
     const scrollDuration = 1000; // Duration in milliseconds
@@ -42,3 +30,21 @@ function scrollToPosition(targetY) {
 
     requestAnimationFrame(animateScroll); // Start the animation
 }
+
+// Scroll to about section when clicking menu links
+document.querySelectorAll('#banner > div.inner > ul > li > a').forEach(anchor => {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        const targetSection = document.querySelector('body > section.about-section');
+
+        if (targetSection) {
+            const targetY = targetSection.getBoundingClientRect().top + window.scrollY;
+            scrollToPosition(targetY - 200); // Use smooth scrolling function
+        }
+    });
+});
+
+
+
+

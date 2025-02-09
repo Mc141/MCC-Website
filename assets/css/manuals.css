@@ -177,3 +177,14 @@ a:hover {
         font-size: 14px;
     }
 }
+
+
+
+/*arrow animation styles*/
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}

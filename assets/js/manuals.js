@@ -3,6 +3,7 @@ const jsonFilePath = './data/manuals.json';
 let data = {};
 let openTable = null; // Track currently open table
 let openHeader = null; // Track currently active header
+let openArrow = null; // Track currently active arrow
 
 // Select the container correctly
 let dropdownContainer = document.querySelector(".dropdown-container");
@@ -43,6 +44,7 @@ fetch(jsonFilePath)
         // Dropdown arrow
         let arrowImg = new Image(20, 20);
         arrowImg.src = "./assets/images/arrow.png";
+        arrowImg.classList.add("dropdown-arrow"); // Add a class for styling
         dropdownHeader.appendChild(arrowImg);
 
         dropdown.appendChild(dropdownHeader);
@@ -62,18 +64,27 @@ fetch(jsonFilePath)
                 if (openHeader) {
                     openHeader.classList.remove("active-header"); // Remove class from previous header
                 }
+                if (openArrow) {
+                    openArrow.classList.remove("rotate"); // Reset arrow rotation
+                }
             }
 
             if (table.style.display === "none") {
                 openDropdown(table, category);
                 openTable = table; // Update currently open table
                 openHeader = dropdownHeader;
+                openArrow = arrowImg;
+
                 dropdownHeader.classList.add("active-header"); // Apply active class
+                arrowImg.classList.add("rotate"); // Rotate arrow
             } else {
                 table.style.display = "none"; // Hide table if clicking again
                 dropdownHeader.classList.remove("active-header"); // Remove active class
+                arrowImg.classList.remove("rotate"); // Reset arrow rotation
+
                 openTable = null; // Reset open table
                 openHeader = null;
+                openArrow = null;
             }
         });
     }

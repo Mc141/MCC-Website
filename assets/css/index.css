@@ -22,6 +22,12 @@ input, textarea {
 }
 
 
+#banner, .inner > h2:nth-child(1) {
+    color: #3d424f !important;
+	background-color: white;
+}
+
+
 #banner h2 {
     margin-top: 50px;
 }

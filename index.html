@@ -15,30 +15,38 @@
 	<link rel="stylesheet" href="assets/css/contact.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/slides.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
     <script defer src="assets/js/contact.js"></script>
     <script defer src="assets/js/slides.js"></script>
+    <script defer src="/assets/js/nav.js"></script>
+
+
+
+  
 
   </head>
   <body class="landing is-preload">
     <!-- Header -->
-    <header id="header" class="alt">
-      <div class="logo-container">
-        <img id="logo-img" src="assets/images/logo.png" alt="Company logo">
-        
-        <h1><a id="logo" href="index.html">MCC Limpopo</a></h1>
-      </div>
-      
+  <header id="header" class="alt">
+  <div class="logo-container">
+    <img id="logo-img" src="assets/images/logo.png" alt="Company logo">
+    <h1><a id="logo" href="index.html">MCC Limpopo</a></h1>
 
-      <nav id="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="manuals.html">Product Manuals</a>
-          </li>
-          <li><button onclick="scrollToBottom()">Contact</button></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Mobile menu toggle button -->
+    <button id="mobile-menu-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+  </div>
+
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="manuals.html">Product Manuals</a></li>
+      <li><button onclick="scrollToBottom()">Contact</button></li>
+    </ul>
+  </nav>
+</header>
+
 
     <!-- Banner -->
     <section id="banner">
@@ -420,7 +428,7 @@
         <div>
 			<form method="POST" id="contactForm" name="contactForm" class="contactForm">
 
-				<h3>Write us</h3>
+				<h3>Contact Us</h3>
 					<div class="col-md-12">
 						<div class="form-group">
 							<input type="text" class="form-control" name="name" id="name" placeholder="Name">
@@ -462,7 +470,7 @@
 
 
     <div>
-      <h3>Contact</h3>
+
       <ul class="labeled-icons">
         <li class="logo-li">
           <i class="fa-solid fa-home"></i>
@@ -531,5 +539,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+    
   </body>
 </html>

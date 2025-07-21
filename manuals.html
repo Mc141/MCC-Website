@@ -17,28 +17,36 @@
         <link rel="stylesheet" href="assets/css/contact.css">
         <link rel="stylesheet" href="assets/css/manuals.css">
         <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/nav.css">
         <script defer src="assets/js/contact.js"></script>
         <script defer src="assets/js/manuals.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
 
 
       </head>
 
            <!-- Header -->
-     <header id="header" class="alt">
-      <div class="logo-container">
-        <img id="logo-img" src="assets/images/logo.png" alt="Company logo">
-        <h1><a id="logo" href="index.html">MCC Limpopo</a></h1>
-      </div>
-      <nav id="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="manuals.html">Product Manuals</a>
-          </li>
-          <li><button onclick="scrollToBottom()">Contact</button></li>
-        </ul>
-      </nav>
-    </header>
+      <header id="header" class="alt">
+  <div class="logo-container">
+    <img id="logo-img" src="assets/images/logo.png" alt="Company logo">
+    <h1><a id="logo" href="index.html">MCC Limpopo</a></h1>
+
+    <!-- Mobile menu toggle button -->
+    <button id="mobile-menu-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+  </div>
+
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="manuals.html">Product Manuals</a></li>
+      <li><button onclick="scrollToBottom()">Contact</button></li>
+    </ul>
+  </nav>
+</header>
+
+
 
 <body class="landing is-preload">
   
@@ -56,7 +64,7 @@
           <div>
         <form method="POST" id="contactForm" name="contactForm" class="contactForm">
   
-          <h3>Write us</h3>
+          <h3>Contact Us</h3>
             <div class="col-md-12">
               <div class="form-group">
                 <input type="text" class="form-control" name="name" id="name" placeholder="Name">
@@ -97,43 +105,54 @@
       </div> -->
   
   
-      <div>
-        <h3>Contact</h3>
-        <ul class="labeled-icons">
-          <li class="logo-li">
-            <i class="fa-solid fa-home"></i>
-            <div>24, 20th Street, Industrial, Polokwane, <br> Limpopo, South Africa</div>  
-            
-          </li>
+    <div>
+
+      <ul class="labeled-icons">
+        <li class="logo-li">
+          <i class="fa-solid fa-home"></i>
+          <a href="https://maps.app.goo.gl/vS8mFuTuP7ty6r3r7">24, 20th Street, Industrial, Polokwane, <br> Limpopo, South Africa</a>    
+        </li>
+        
+        <li class="logo-li">
+          <i class="fa-solid fa-mail-bulk"></i>
           
-          <li class="logo-li">
-            <i class="fa-solid fa-mail-bulk"></i>
-            <div>P.O. Box 1234, Polokwane, 0700, South Africa</div>
-            
-          </li>
-      
-          <li class="logo-li">
-            <i class="fa-solid fa-phone"></i>
-            <div>015 293 1459</div>
-            
-          </li>
-      
-          <li class="logo-li">
-            <i class="fa-solid fa-fax"></i>
-            <div>015 293 0368</div>
-          </li>
-      
-          <li class="logo-li">
-            <i class="fa-solid fa-envelope"></i>
-            <div>justin22.jdb@gmail.com</div>
-          </li>
-      
-          <li class="logo-li">
-            <i class="fa-brands fa-facebook-f"></i>
-            <a href="https://www.facebook.com/mcclimpopo">@MCC Limpopo</a>
-          </li>
-        </ul>
-      </div>
+          <div>Postnet suite 33, Polokwane, 0700, South Africa</div>
+          
+        </li>
+    
+
+                <li class="logo-li">
+          <i class="fa-solid fa-fax"></i>
+          <div>TEL: 015 023 1109</div>
+        </li>
+
+
+  
+  <li class="logo-li">
+    <i class="fa-solid fa-phone"></i>
+    <div>Justin du Bruyn: 082 895 1065<br><div>Edward Chigudu: 083 479 6081<br>Patrick Masekela: 061 458 9319</div>
+  </li>
+
+
+    
+
+    
+<li class="logo-li">
+  <i class="fa-solid fa-envelope"></i>
+  <div>
+    <a href="mailto:justin22.jdb@gmail.com">justin22.jdb@gmail.com</a><br>
+    <a href="mailto:edward@mcclimpopo.co.za">edward@mcclimpopo.co.za</a><br>
+    <a href="mailto:patrick@mcclimpopo.co.za">patrick@mcclimpopo.co.za</a>
+  </div>
+</li>
+
+     
+        <li class="logo-li">
+          <i class="fa-brands fa-facebook-f"></i>
+          <a href="https://www.facebook.com/mcclimpopo">@MCC Limpopo</a>
+        </li>
+      </ul>
+    </div>
       
   
   

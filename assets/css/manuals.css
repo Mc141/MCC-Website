@@ -188,3 +188,11 @@ a:hover {
 .rotate {
     transform: rotate(180deg);
 }
+
+
+
+
+.dropdown-table tr td:nth-child(2) {
+  text-align: center;
+  vertical-align: middle;
+}
